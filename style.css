@@ -195,15 +195,11 @@ figcaption { margin-top: 10px; font-size: 0.9rem; color: var(--paper-dim); font-
 .eot-dot { fill: var(--ember); }
 .eot-label { fill: var(--paper); font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.06em; }
 
-.cols { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(36px, 6vw, 80px); }
-.data { margin: 26px 0 0; border-top: 1px solid var(--line-strong); }
+.data { margin: 26px 0 0; max-width: 760px; border-top: 1px solid var(--line-strong); }
 .data > div { display: grid; grid-template-columns: 110px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
 .data dt { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brass); padding-top: 4px; }
 .data dd { margin: 0; color: var(--paper-dim); }
 .data dd em { color: var(--paper); font-style: normal; font-weight: 500; margin-right: 4px; }
-.catches { list-style: none; margin: 26px 0 0; padding: 0; border-top: 1px solid var(--line-strong); }
-.catches li { padding: 14px 0 14px 26px; border-bottom: 1px solid var(--line); color: var(--paper-dim); position: relative; }
-.catches li::before { content: ""; position: absolute; left: 4px; top: 1.35em; width: 9px; height: 9px; border-radius: 50%; border: 1px solid var(--brass); }
 
 .foot { max-width: var(--max); margin: 40px auto 0; padding: 28px var(--gutter) 56px; border-top: 1px solid var(--line); color: var(--paper-dim); font-size: 0.92rem; }
 .foot p { margin: 0; max-width: 760px; }
@@ -217,8 +213,7 @@ figcaption { margin-top: 10px; font-size: 0.9rem; color: var(--paper-dim); font-
   .stats { grid-template-columns: 1fr 1fr; }
   .stat:nth-child(odd) { padding-left: 0; border-left: 0; }
   .stat:nth-child(even) { padding-left: 18px; border-left: 1px solid var(--line); }
-  .cols { grid-template-columns: 1fr; }
-  .city { grid-template-columns: 1fr 1fr; }
+    .city { grid-template-columns: 1fr 1fr; }
   .city .d { text-align: left; grid-column: 1 / -1; }
   .data > div { grid-template-columns: 1fr; gap: 2px; }
   .hero { padding-top: 52px; }
